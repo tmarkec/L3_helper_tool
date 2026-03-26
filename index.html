@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KPI Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.min.js" integrity="sha512-/G6z4WsO2a6MHhUARQzIvSkhFznoKUyeR4g+cqCHW0u5m9a8ax1Abxp5E/Uq5U82/+Fgsa8hpnEkTUAfFEQvQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <header>
+    <h1>KPI Generator for Modules</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <label for="moduleSelect">Select a Module:</label>
+      <select id="moduleSelect">
+        <option value="">--Choose a module--</option>
+      </select>
+
+      <button id="generateBtn">Generate KPI List</button>
+      <button id="downloadBtn">Download KPI List</button>
+
+      <div id="kpiListContainer">
+        <h2>KPI List</h2>
+        <ul id="kpiList"></ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
